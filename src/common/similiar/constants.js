@@ -1,0 +1,3 @@
+export const SIMILIAR_REQUEST = 'common/SIMILIAR_REQUEST';
+export const SIMILIAR_RECEIVED = 'common/SIMILIAR_RECEIVED';
+export const SIMILIAR_ERROR = 'common/SIMILIAR_ERROR';
