@@ -1,5 +1,5 @@
 import React from 'react';
-import AppContent from './containers/App';
+import AppContent from './ui/layouts/App';
 import './App.css';
 
 function App(props) {
@@ -16,7 +16,7 @@ function App(props) {
         <link rel="stylesheet" type="text/css" charSet="UTF-8" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.min.css" />
         <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick-theme.min.css" />
         <script src="https://unpkg.com/axios/dist/axios.min.js" />
-        <title>Tokoflix</title>
+        <title>Pokemon</title>
       </head>
       <body>
         <AppContent />

@@ -1,8 +1,6 @@
-import imageNotFound from '../../public/image-not-found.png';
-
 export const getImageUrl = (imageId, type) => {
   if (!imageId) {
-    return imageNotFound;
+    return process.env.PUBLIC_URL + '/img/image-not-found.png';
   }
 
   let imageURL = `https://image.tmdb.org/t/p/w92${imageId}`;

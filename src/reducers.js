@@ -1,16 +1,12 @@
 import { combineReducers } from 'redux';
 import { reducer as formReducer } from 'redux-form';
 
-import movies from './common/movies/reducer';
-import movie from './common/movie/reducer';
-import similiar from './common/similiar/reducer';
-import recommendations from './common/recommendations/reducer';
+import pokemons from './ui/common/pokemons/reducer';
+import pokemon from './ui/common/pokemon/reducer';
 
 const rootReducer = combineReducers({
-  movies,
-  movie,
-  similiar,
-  recommendations,
+  pokemons,
+  pokemon,
   form: formReducer,
 });
 

@@ -1,0 +1,3 @@
+export const POKEMONS_REQUEST = 'common/POKEMONS_REQUEST';
+export const POKEMONS_RECEIVED = 'common/POKEMONS_RECEIVED';
+export const POKEMONS_ERROR = 'common/POKEMONS_ERROR';
