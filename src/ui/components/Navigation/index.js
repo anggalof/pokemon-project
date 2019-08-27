@@ -17,7 +17,7 @@ class Navigation extends Component {
             <Logo alt="logo" src={process.env.PUBLIC_URL + '/img/pokemon-logo.jpg'} />
           </LinkWrapper>
         </LogoWrapper>
-        <ButtonBalanceWrapper to="/MyPokemonList">
+        <ButtonBalanceWrapper to="/my-pokemon-list/1">
           <ButtonBalance className="btn btn-info">
             My Pokemon List
           </ButtonBalance>

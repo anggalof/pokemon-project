@@ -2,22 +2,17 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { Row, Col } from 'styled-bootstrap-grid';
 
-import SliderImage from '../../components/SliderImage';
-import Charts from '../../components/Charts';
-import Legend from '../../components/Legend';
-import CatchPokemonModal from '../../components/CatchPokemonModal';
+import PokemonList from '../../components/PokemonItem/pokemon-list';
 
 import {
-  SliderWrapper,
+  ItemContentWrapper,
+  ImagePokemonWrapper,
+  NicknameTitle,
   TitleWrapper,
   Line,
   DetailWrapper,
-  ButtonCatchPokemonWrapper,
-  IconCatchPokemon,
-  ButtonCatchPokemon,
   TitleDetailWrapper,
-  OverviewWrapper,
-
+  TitleNicknameWrapper,
   CategoryDetailWrapper,
   LabelCategoryDetail,
   LabelWrapper,
@@ -25,34 +20,25 @@ import {
   LabelType,
   GenderFemaleImage,
   GenderMaleImage,
+  InputWrapper,
+  Input,
+  ButtonChangeName,
 } from './styles';
 
-class MainContent extends React.Component {
+class MyPokemonDetail extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      data: [],
-      colors: ['#43A19E', '#7B43A1', '#F2317A', '#FF9824', '#58CF6C', '#3DC7EF'],
-      isOpen: false,
+      value: '',
       pokemonName: '',
     }
   }
-  componentDidMount() {
-    this.populateStats();
-  }
-  populateStats = () => {
-    const { stats } = this.props;
-    let data = [];
-
-    data.push(stats);
-
-    this.setState({ data: data });
+  handleChange = (event) => {
+    this.setState({ value: event.target.value });
   };
-  handleOpenModal = (open, name) => {
-    this.setState({ isOpen: open, pokemonName: name });
-  };
-  handleHideModal = (hide) => {
-    this.setState({ isOpen: hide});
+  handleSubmit = (event) => {
+    this.setState({ pokemonName: this.state.value });
+    event.preventDefault();
   };
   render() {
     const {
@@ -63,29 +49,28 @@ class MainContent extends React.Component {
       weight,
       height,
     } = this.props;
-
+    const pokemonData = PokemonList.data;
 	  return (
       <div>
-        <TitleWrapper>{name.charAt(0).toUpperCase() + name.slice(1)}</TitleWrapper>
+        {this.state.pokemonName ? (
+          <NicknameTitle>Nickname: {this.state.pokemonName}</NicknameTitle>
+        ) : (
+          <TitleWrapper>{name.charAt(0).toUpperCase() + name.slice(1)}</TitleWrapper>
+        )}
         <Line />
-        <CatchPokemonModal
-          show={this.state.isOpen}
-          onHide={() => this.handleHideModal(false)}
-          name={this.state.pokemonName}
-        />
         <DetailWrapper>
           <Row>
             <Col md={3}>
-              <SliderWrapper>
-                <SliderImage files={image} />
-                <ButtonCatchPokemonWrapper
-                  className="clearfix"
-                  onClick={() => this.handleOpenModal(true, name)}
-                >
-                  <IconCatchPokemon src={process.env.PUBLIC_URL + '/img/pokemon-icon.jpg'} alt="catch" />
-                  <ButtonCatchPokemon>Catch Pokemon</ButtonCatchPokemon>
-                </ButtonCatchPokemonWrapper>
-              </SliderWrapper>
+              {pokemonData.map((item) => {
+                if (name === item.name) {
+                  return (
+                    <ItemContentWrapper key={item.id}>
+                      <ImagePokemonWrapper src={item.image} alt="icon" />
+                    </ItemContentWrapper>
+                  );
+                }
+                return null;
+              })}
             </Col>
             <Col md={9}>
               <Row>
@@ -103,7 +88,7 @@ class MainContent extends React.Component {
                     </Row>
                   </CategoryDetailWrapper>
                 </Col>
-                <Col md={12}>
+                <Col md={4} xs={12}>
                   <TitleDetailWrapper>Abilities</TitleDetailWrapper>
                   <LabelWrapper className="clearfix">
                     {abilities.map((item, index) => {
@@ -115,7 +100,7 @@ class MainContent extends React.Component {
                     })}
                   </LabelWrapper>
                 </Col>
-                <Col md={12}>
+                <Col md={8} xs={12}>
                   <TitleDetailWrapper>Type</TitleDetailWrapper>
                   <LabelWrapper className="clearfix">
                     {types.map((item) => {
@@ -136,25 +121,22 @@ class MainContent extends React.Component {
                     <GenderMaleImage src={process.env.PUBLIC_URL + '/img/pokemon-male-icon.png'} alt="male" />
                   )}
                 </Col>
-                <Col md={12}>
-                  <OverviewWrapper>
-                    <TitleDetailWrapper>Stats</TitleDetailWrapper>
-                    <Row>
-                      <Col md={8}>
-                        <Charts
-                          data={this.state.data}
-                          colors={this.state.colors}
-                          height={250}
-                        />
-                      </Col>
-                      <Col md={4}>
-                        <Legend data={this.state.data} colors={this.state.colors} />
-                      </Col>
-                    </Row>
-                  </OverviewWrapper>
-                </Col>
               </Row>
             </Col>
+            {this.state.pokemonName ? (
+              ''
+            ) : (
+              <Col md={12}>
+                <Line />
+                <TitleNicknameWrapper>Add a nickname for this pokemon</TitleNicknameWrapper>
+                <form onSubmit={this.handleSubmit}>
+                  <InputWrapper>
+                    <Input type="text" onChange={this.handleChange} name="nickname" /><br />
+                    <ButtonChangeName type="submit">Save</ButtonChangeName>
+                  </InputWrapper>
+                </form>
+              </Col>
+            )}
           </Row>
         </DetailWrapper>
       </div>
@@ -162,7 +144,7 @@ class MainContent extends React.Component {
   }
 }
 
-MainContent.propTypes = {
+MyPokemonDetail.propTypes = {
   name: PropTypes.string,
   abilities: PropTypes.array,
   types: PropTypes.array,
@@ -171,4 +153,4 @@ MainContent.propTypes = {
   height: PropTypes.number,
 };
 
-export default MainContent;
+export default MyPokemonDetail;

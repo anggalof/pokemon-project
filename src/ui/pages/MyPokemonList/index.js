@@ -1,10 +1,10 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { connect } from "react-redux";
-import { bindActionCreators } from "redux";
+import { connect } from 'react-redux';
+import { bindActionCreators } from 'redux';
 import fetchPokemon from '../../common/pokemon/actions';
 import HomeLoading from '../../components/HomeLoading';
-import PokemonDetail from '../../containers/PokemonDetail';
+import MyPokemonDetail from '../../containers/MyPokemonDetail';
 
 import { Wrapper, ContentWrapper } from './styles';
 
@@ -25,7 +25,7 @@ class MyPokemonList extends React.Component {
     return (
       <Wrapper>
         <ContentWrapper>
-          <PokemonDetail
+          <MyPokemonDetail
             name={data.name}
             stats={data.stats}
             abilities={data.abilities}

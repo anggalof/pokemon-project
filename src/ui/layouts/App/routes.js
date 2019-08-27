@@ -9,7 +9,7 @@ const AppRoutes = (
   <Switch>
   	<Route exact path="/" component={HomePage} />
     <Route path="/pokemon-detail/view/:id" component={PokemonDetail} />
-    <Route path="/my-pokemon-list" component={MyPokemonList} />
+    <Route path="/my-pokemon-list/:id" component={MyPokemonList} />
   </Switch>
 );
 

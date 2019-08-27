@@ -15,7 +15,6 @@ class SliderImage extends React.Component {
       swipeToSlide: true,
     };
     const { files } = this.props;
-    console.log('files', files);
     return (
       <SliderImageWrapper>
         <Slider {...settings}>
