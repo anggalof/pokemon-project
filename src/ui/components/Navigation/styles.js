@@ -22,8 +22,8 @@ export const Logo = styled.img`
     height: 55px;
 `;
 export const LogoWrapper = styled.div`float: left;`;
-export const ButtonBalanceWrapper = styled.div`
+export const ButtonBalanceWrapper = styled(Link)`
 	float: right;
 	font-weight: bold;
 `;
-export const ButtonBalance = styled.div`cursor: none !important;`;
+export const ButtonBalance = styled.div`cursor: pointer;`;

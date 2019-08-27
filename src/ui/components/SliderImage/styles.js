@@ -44,8 +44,9 @@ export const ImageWrapper = styled.img`
   width: 210px;
   height: 250px;
   float: left;
-  @media (max-width: 670px) {
+  @media (max-width: 768px) {
     text-align: center;
     float: none;
+    height: auto !important;
   }
 `;

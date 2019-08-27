@@ -8,7 +8,7 @@ import {
   ItemContentWrapper,
   IconImageWrapper,
   Title,
-  LabelAbilities,
+  LabelType,
 } from './styles';
 
 class PokemonItem extends React.Component {
@@ -24,12 +24,12 @@ class PokemonItem extends React.Component {
                 <Title>{item.name.charAt(0).toUpperCase() + item.name.slice(1)}</Title>
                 <IconImageWrapper src={item.image} alt="icon" />
                 <Row>
-                  {item.abilities.map((ability) => {
+                  {item.types.map((type) => {
                     return (
-                      <Col md={5} key={ability.id}>
-                        <LabelAbilities color={ability.color}>
-                          {ability.name}
-                        </LabelAbilities>
+                      <Col md={5} key={type.id}>
+                        <LabelType color={type.color}>
+                          {type.name}
+                        </LabelType>
                       </Col>
                     );
                   })}

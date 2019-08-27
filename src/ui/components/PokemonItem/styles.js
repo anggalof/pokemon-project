@@ -58,11 +58,12 @@ export const Title = styled.div`
   border-radius: 5px;
   @media (max-width: 768px) {
     font-size: 14px;
-    width: 110px;
+    width: 100%;
+    margin: 0;
   }
 `;
 export const LabelWrapper = styled.div``;
-export const LabelAbilities = styled.div`
+export const LabelType = styled.div`
   width: 65px;
   font-size: 12px;
   float: left;
@@ -92,8 +93,9 @@ export const LabelAbilities = styled.div`
       `${SB_BLACK}` : `${SB_WHITE}` )}
 
   @media (max-width: 768px) {
-    width: 50px;
+    width: 100%;
     font-size: 10px;
     padding: 2px 0 4px 0;
+    margin: 2px auto;
   }
 `;

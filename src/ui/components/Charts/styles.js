@@ -123,4 +123,7 @@ export const LabelStats = styled.label`
   font-size: 14px !important;
   bottom: 0px !important;
   color: ${SB_WHITE} !important;
+  @media (max-width: 768px) {
+    display: none;
+  }
 `;

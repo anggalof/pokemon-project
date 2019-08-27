@@ -23,6 +23,32 @@ export const TitleWrapper = styled.div`
 `;
 export const Line = styled.div`border-top: 2px solid ${SB_ORANGE};`;
 export const DetailWrapper = styled.div`padding: 10px 0;`;
+export const ButtonCatchPokemonWrapper = styled.div`
+  border-radius: 5px;
+  width: 100%;
+  padding: 20px;
+  text-align: center;
+  background: ${SB_SKY_BLUE};
+  margin: 10px 0;
+  cursor: pointer;
+  &:hover {
+    background: ${SB_PRIMARY_BLUE};
+  }
+`;
+export const IconCatchPokemon = styled.img`
+  background-size: cover;
+  width: 50px;
+  float: left;
+  margin-left: 5px;
+`;
+export const ButtonCatchPokemon = styled.div`
+  font-size: 16px;
+  font-weight: bold;
+  color: ${SB_WHITE};
+  float: left;
+  margin-top: 15px;
+  margin-left: 10px;
+`;
 export const TitleDetailWrapper = styled.div`
   padding: 5px 0;
   font-weight: bold;
@@ -42,6 +68,10 @@ export const CategoryDetailWrapper = styled.div`
   width: 60%;
   padding: 20px;
   background: ${SB_BLUE};
+  @media (max-width: 768px) {
+    width: 100%;
+    margin: 10px 0;
+  }
 `;
 export const LabelCategoryDetail = styled.div`
   font-size: 16px;
@@ -72,9 +102,9 @@ export const LabelAbilities = styled.div`
       `${SB_BLACK}` : `${SB_WHITE}` )}
 
   @media (max-width: 768px) {
-    width: 50px;
+    width: 70px;
     font-size: 10px;
-    padding: 2px 0 4px 0;
+    padding: 4px 0 6px 0;
   }
 `;
 export const LabelType = styled.div`
@@ -107,9 +137,9 @@ export const LabelType = styled.div`
       `${SB_BLACK}` : `${SB_WHITE}` )}
 
   @media (max-width: 768px) {
-    width: 50px;
+    width: 70px;
     font-size: 10px;
-    padding: 2px 0 4px 0;
+    padding: 4px 0 6px 0;
   }
 `;
 export const GenderFemaleImage = styled.img`

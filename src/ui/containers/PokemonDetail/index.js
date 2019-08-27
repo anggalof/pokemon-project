@@ -11,6 +11,9 @@ import {
   TitleWrapper,
   Line,
   DetailWrapper,
+  ButtonCatchPokemonWrapper,
+  IconCatchPokemon,
+  ButtonCatchPokemon,
   TitleDetailWrapper,
   OverviewWrapper,
 
@@ -61,6 +64,10 @@ class MainContent extends React.Component {
             <Col md={3}>
               <SliderWrapper>
                 <SliderImage files={image} />
+                <ButtonCatchPokemonWrapper className="clearfix">
+                  <IconCatchPokemon src={process.env.PUBLIC_URL + '/img/pokemon-icon.jpg'} alt="catch" />
+                  <ButtonCatchPokemon>Catch Pokemon</ButtonCatchPokemon>
+                </ButtonCatchPokemonWrapper>
               </SliderWrapper>
             </Col>
             <Col md={9}>
@@ -68,11 +75,11 @@ class MainContent extends React.Component {
                 <Col md={12}>
                   <CategoryDetailWrapper>
                     <Row>
-                      <Col md={6}>
+                      <Col md={6} xs={6}>
                         <TitleDetailWrapper>Height</TitleDetailWrapper>
                         <LabelCategoryDetail>{height} </LabelCategoryDetail>
                       </Col>
-                      <Col md={6}>
+                      <Col md={6} xs={6}>
                         <TitleDetailWrapper>Weight</TitleDetailWrapper>
                         <LabelCategoryDetail>{weight} Lbs</LabelCategoryDetail>
                       </Col>
