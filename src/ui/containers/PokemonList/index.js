@@ -1,5 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import { Col } from 'styled-bootstrap-grid';
 import PokemonItem from '../../components/PokemonItem';
 import { TotalCountSearch, GridWrapper, RowWrapper } from './styles';
 
@@ -14,9 +15,9 @@ class PokemonList extends React.Component {
         <RowWrapper className="row">
           {pokemons.results.map((item) => {
             return (
-              <div className="col-xs-6 col-sm-2" key={item.url}>
+              <Col md={2} xs={6} key={item.url}>
                 <PokemonItem name={item.name} url={item.url} />
-              </div>
+              </Col>
             );
           })}
         </RowWrapper>

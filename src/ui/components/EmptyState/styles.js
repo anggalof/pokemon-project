@@ -1,6 +1,11 @@
 import styled from 'styled-components';
+import H3 from '../H3';
 
-const ContentWrapper = styled.div`
+export const Wrapper = styled.div`
+  margin: 10px auto;
+  max-width: 1080px;
+`;
+export const ContentWrapper = styled.div`
   background: #fff;
   padding: 5px 20px 10px 20px;
   @media (max-width: 768px) {
@@ -12,4 +17,6 @@ const ContentWrapper = styled.div`
   border-radius: 5px;
   position: relative;
 `;
-export default ContentWrapper;
+export const CenteredH3 = styled(H3)`
+  text-align: center;
+`;

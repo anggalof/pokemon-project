@@ -21,7 +21,7 @@ function errorPokemonList(error) {
 export default function fetchPokemonList() {
   return dispatch => {
     dispatch(requestPokemonList());
-    return axios.get(`https://pokeapi.co/api/v2/pokemon/??offset=15&limit=15`)
+    return axios.get(`https://pokeapi.co/api/v2/pokemon/??offset=15&limit=18`)
       .then((result) => {
         dispatch(receivePokemonList(result));
         return result;

@@ -24,19 +24,18 @@ class Home extends React.Component {
       <Wrapper>
         <Container>POKEMON LIST</Container>
         <Line />
-        {pokemonList !== undefined ?
+        {pokemonList !== undefined ? (
           <div>
-            <PokemonList
-              pokemons={pokemonList}
-            />
+            <PokemonList pokemons={pokemonList} />
           </div>
-          : <div>
+        ) : (
+          <div>
             <HomeLoading />
             <Rectangle>
               <Loading />
             </Rectangle>
           </div>
-        }
+        )}
 	  	</Wrapper>
     );
   }

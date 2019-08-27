@@ -16,23 +16,23 @@ class Pokemon extends React.Component {
   render() {
     const { pokemon } = this.props;
     const data = pokemon.data;
-    console.log('data pokemon detail', data);
+
     if (data === undefined) {
       return <div>
         <HomeLoading />
       </div>;
     }
-    // const releaseDate = formatSetDate(data.release_date);
     return (
       <Wrapper>
         <ContentWrapper>
           <PokemonDetail
             name={data.name}
-            status={data.stats}
+            stats={data.stats}
             abilities={data.abilities}
             image={data.sprites}
             types={data.types}
             weight={data.weight}
+            height={data.height}
           />
         </ContentWrapper>
       </Wrapper>

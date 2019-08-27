@@ -25,9 +25,5 @@ export const LogoWrapper = styled.div`float: left;`;
 export const ButtonBalanceWrapper = styled.div`
 	float: right;
 	font-weight: bold;
-	@media (max-width: 680px) {
-		float: none !important;
-		margin: 40px 0 0 0 !important;
-	}
 `;
 export const ButtonBalance = styled.div`cursor: none !important;`;

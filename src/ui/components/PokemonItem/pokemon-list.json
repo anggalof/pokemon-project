@@ -1,0 +1,270 @@
+{
+  "data": [
+    {
+      "id": "pokemon832090setup",
+      "name": "bulbasaur",
+      "image": "https://assets.pokemon.com/assets/cms2/img/pokedex/detail/001.png",
+      "abilities": [
+        {
+          "id": "abilities00001",
+          "name": "grass",
+          "color": "green"
+        },
+        {
+          "id": "abilities00002",
+          "name": "poison",
+          "color": "purple"
+        }
+      ]
+    },
+    {
+      "id": "pokemon832091setup",
+      "name": "ivysaur",
+      "image": "https://assets.pokemon.com/assets/cms2/img/pokedex/detail/002.png",
+      "abilities": [
+        {
+          "id": "abilities00001",
+          "name": "grass",
+          "color": "green"
+        },
+        {
+          "id": "abilities00002",
+          "name": "poison",
+          "color": "purple"
+        }
+      ]
+    },
+    {
+      "id": "pokemon832093setup",
+      "name": "venusaur",
+      "image": "https://assets.pokemon.com/assets/cms2/img/pokedex/detail/003.png",
+      "abilities": [
+        {
+          "id": "abilities00001",
+          "name": "grass",
+          "color": "green"
+        },
+        {
+          "id": "abilities00002",
+          "name": "poison",
+          "color": "purple"
+        }
+      ]
+    },
+    {
+      "id": "pokemon832094setup",
+      "name": "charmander",
+      "image": "https://assets.pokemon.com/assets/cms2/img/pokedex/detail/004.png",
+      "abilities": [
+        {
+          "id": "abilities00001",
+          "name": "fire",
+          "color": "orange"
+        }
+      ]
+    },
+    {
+      "id": "pokemon832095setup",
+      "name": "charmeleon",
+      "image": "https://assets.pokemon.com/assets/cms2/img/pokedex/detail/005.png",
+      "abilities": [
+        {
+          "id": "abilities00001",
+          "name": "fire",
+          "color": "orange"
+        }
+      ]
+    },
+    {
+      "id": "pokemon832096setup",
+      "name": "charizard",
+      "image": "https://assets.pokemon.com/assets/cms2/img/pokedex/detail/006.png",
+      "abilities": [
+        {
+          "id": "abilities00001",
+          "name": "fire",
+          "color": "orange"
+        }
+      ]
+    },
+    {
+      "id": "pokemon832097setup",
+      "name": "squirtle",
+      "image": "https://assets.pokemon.com/assets/cms2/img/pokedex/detail/007.png",
+      "abilities": [
+        {
+          "id": "abilities00001",
+          "name": "water",
+          "color": "blue"
+        }
+      ]
+    },
+    {
+      "id": "pokemon832098setup",
+      "name": "wartortle",
+      "image": "https://assets.pokemon.com/assets/cms2/img/pokedex/detail/008.png",
+      "abilities": [
+        {
+          "id": "abilities00001",
+          "name": "water",
+          "color": "blue"
+        }
+      ]
+    },
+    {
+      "id": "pokemon832099setup",
+      "name": "blastoise",
+      "image": "https://assets.pokemon.com/assets/cms2/img/pokedex/detail/009.png",
+      "abilities": [
+        {
+          "id": "abilities00001",
+          "name": "water",
+          "color": "blue"
+        }
+      ]
+    },
+    {
+      "id": "pokemon832100setup",
+      "name": "caterpie",
+      "image": "https://assets.pokemon.com/assets/cms2/img/pokedex/detail/010.png",
+      "abilities": [
+        {
+          "id": "abilities00001",
+          "name": "bug",
+          "color": "dark-green"
+        }
+      ]
+    },
+    {
+      "id": "pokemon832101setup",
+      "name": "metapod",
+      "image": "https://assets.pokemon.com/assets/cms2/img/pokedex/detail/011.png",
+      "abilities": [
+        {
+          "id": "abilities00001",
+          "name": "bug",
+          "color": "dark-green"
+        }
+      ]
+    },
+    {
+      "id": "pokemon832102setup",
+      "name": "butterfree",
+      "image": "https://assets.pokemon.com/assets/cms2/img/pokedex/detail/012.png",
+      "abilities": [
+        {
+          "id": "abilities00001",
+          "name": "bug",
+          "color": "dark-green"
+        },
+        {
+          "id": "abilities00002",
+          "name": "flying",
+          "color": "sky-blue"
+        }
+      ]
+    },
+    {
+      "id": "pokemon832103setup",
+      "name": "weedle",
+      "image": "https://assets.pokemon.com/assets/cms2/img/pokedex/detail/013.png",
+      "abilities": [
+        {
+          "id": "abilities00001",
+          "name": "bug",
+          "color": "dark-green"
+        },
+        {
+          "id": "abilities00002",
+          "name": "poison",
+          "color": "purple"
+        }
+      ]
+    },
+    {
+      "id": "pokemon832104setup",
+      "name": "kakuna",
+      "image": "https://assets.pokemon.com/assets/cms2/img/pokedex/detail/014.png",
+      "abilities": [
+        {
+          "id": "abilities00001",
+          "name": "bug",
+          "color": "dark-green"
+        },
+        {
+          "id": "abilities00002",
+          "name": "poison",
+          "color": "purple"
+        }
+      ]
+    },
+    {
+      "id": "pokemon832105setup",
+      "name": "beedrill",
+      "image": "https://assets.pokemon.com/assets/cms2/img/pokedex/detail/015.png",
+      "abilities": [
+        {
+          "id": "abilities00001",
+          "name": "bug",
+          "color": "dark-green"
+        },
+        {
+          "id": "abilities00002",
+          "name": "poison",
+          "color": "purple"
+        }
+      ]
+    },
+    {
+      "id": "pokemon832106setup",
+      "name": "pidgey",
+      "image": "https://assets.pokemon.com/assets/cms2/img/pokedex/detail/016.png",
+      "abilities": [
+        {
+          "id": "abilities00001",
+          "name": "normal",
+          "color": "grey"
+        },
+        {
+          "id": "abilities00002",
+          "name": "flying",
+          "color": "sky-blue"
+        }
+      ]
+    },
+    {
+      "id": "pokemon832107setup",
+      "name": "pidgeotto",
+      "image": "https://assets.pokemon.com/assets/cms2/img/pokedex/detail/017.png",
+      "abilities": [
+        {
+          "id": "abilities00001",
+          "name": "normal",
+          "color": "grey"
+        },
+        {
+          "id": "abilities00002",
+          "name": "flying",
+          "color": "sky-blue"
+        }
+      ]
+    },
+    {
+      "id": "pokemon832108setup",
+      "name": "pidgeot",
+      "image": "https://assets.pokemon.com/assets/cms2/img/pokedex/detail/018.png",
+      "abilities": [
+        {
+          "id": "abilities00001",
+          "name": "normal",
+          "color": "grey"
+        },
+        {
+          "id": "abilities00002",
+          "name": "flying",
+          "color": "sky-blue"
+        }
+      ]
+    }
+  ]
+}

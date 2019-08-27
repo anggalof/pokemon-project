@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import { Row } from 'styled-bootstrap-grid';
 import { SB_DARK_PURPLE } from '../../../utils/constants/StyleConstants';
 
 export const TotalCountSearch = styled.div`
@@ -13,7 +14,7 @@ export const GridWrapper = styled.div`
   padding-right: 10px;
   padding-bottom: 20px;
 `;
-export const RowWrapper = styled.div`
+export const RowWrapper = styled(Row)`
   margin-right: -10px !important;
   margin-left: -10px !important;
 `;

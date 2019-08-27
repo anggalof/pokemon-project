@@ -4,9 +4,6 @@ import { SB_DARK_GREY, SB_LIGHT_GREY, SB_ORANGE } from '../../../utils/constants
 export const Wrapper = styled.div`
   background-color: ${SB_LIGHT_GREY};
   margin-top: 70px;
-  @media (max-width: 680px) {
-    margin-top: 110px;
-  }
 `;
 export const Container = styled.div`
   font-size: 30px;
